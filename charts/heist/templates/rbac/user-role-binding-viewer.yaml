@@ -1,0 +1,24 @@
+{{- if .Values.userRoles.enabled }}
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: {{ include "heist.role.user.binding.viewer" . }}
+  labels:
+    {{- include "heist.labels" . | nindent 4 }}
+    rbac.authorization.k8s.io/aggregate-to-view: "true"
+rules:
+- apiGroups:
+  - heist.youniqx.com
+  resources:
+  - vaultbindings
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - heist.youniqx.com
+  resources:
+  - vaultbindings/status
+  verbs:
+  - get
+{{- end }}
