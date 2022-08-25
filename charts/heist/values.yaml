@@ -1,0 +1,108 @@
+# Default values for heist.
+
+# -- Number of Replicas of the Heist Operator
+replicaCount: 1
+
+webhooks:
+  enabled: true
+  caBundle: ""
+
+certmanager:
+  enabled: true
+
+userRoles:
+  enabled: true
+
+managerRoles:
+  enabled: true
+
+scope:
+  global: true
+  watchedNamespaces: []
+
+manager:
+  enabled: true
+
+heist:
+  image:
+    # -- Image repository for the Heist image
+    repository: quay.io/youniqx/heist
+    # -- Image Pull Policy for the Heist image
+    pullPolicy: IfNotPresent
+    # -- Tag of the Heist image to use
+    # @default -- chart.appVersion
+    tag: ""
+
+  resources:
+    requests:
+      # -- CPU requests for the Heist container
+      cpu: 100m
+      # -- Memory requests for the Heist container
+      memory: 20Mi
+  securityContext:
+    capabilities:
+      drop:
+        - ALL
+    readOnlyRootFilesystem: true
+    runAsNonRoot: true
+  # -- Port the health probes listen on (readiness & liveness)
+  healthProbePort: 8081
+  # -- Port the metrics endpoint listens on
+  metricsPort: 8080
+  config:
+    # -- List of namespaces to which secrets can be synced from anywhere
+    syncSecretNamespaceAllowList: []
+
+services:
+  webhook:
+    # -- Type of the Webhook service
+    type: ClusterIP
+    # -- Port of the Webhook service
+    port: 443
+    # -- Port of the webhook endpoint on Heist pods
+    targetPort: 9443
+
+vault:
+  # -- Address of the Vault instance
+  address: "https://vault.example.com"
+
+  ca:
+    secret: ""
+    key: ca.crt
+
+  # -- Role used to authenticate in Vault
+  role: "heist"
+
+# -- List of image pull secrets used by the Heist operator pods
+imagePullSecrets: []
+
+nameOverride: ""
+fullnameOverride: ""
+
+serviceAccount:
+  # -- Specifies whether a service account should be created
+  create: true
+  # -- Annotations to add to the service account
+  annotations: {}
+  # -- The name of the service account to use.
+  # -- If not set and create is true, a name is generated using the fullname template
+  name: ""
+
+# -- Additional annotations added to Heist operator pods
+podAnnotations: {}
+
+# -- Additional labels added to Heist operator pods
+podLabels: {}
+
+# -- Security Context set on the pod level for Heist operator pods
+podSecurityContext: {}
+  # -- fsGroup: 2000
+
+# -- Node selector applied to the Heist operator deployment
+nodeSelector: {}
+
+# -- Tolerations applied to the Heist operator deployment
+tolerations: []
+
+# -- Affinities applied to the Heist operator deployment
+affinity: {}

@@ -1,0 +1,4 @@
+---
+target-branch: main
+chart-dirs:
+  - charts
