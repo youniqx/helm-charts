@@ -1,7 +1,8 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base"
+    "config:base",
+    ":gitSignOff"
   ],
   "regexManagers": [
     {
@@ -10,6 +11,12 @@
         "# renovate: datasource=(?<datasource>[a-z-]+?) depName=(?<depName>[a-zA-Z0-9-_\\/]+?)(?: versioning=[\"']?(?<versioning>[a-z-0-9]+?)[\"']?)?(?: extractVersion=[\"']?(?<extractVersion>\\^.*?\\$)[\"']?)?\\n.*(?:[:=]\\s|=)[\"']?(?<currentValue>v?[a-zA-Z0-9\\.\\+-:~]+)[\"']?"
       ],
       "versioningTemplate": "{{#if versioning}}{{versioning}}{{else}}semver{{/if}}"
+    }
+  ],
+  "packageRules": [
+    {
+      "matchPaths": ["charts/**"],
+      "bumpVersion": "patch"
     }
   ]
 }
