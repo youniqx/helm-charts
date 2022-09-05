@@ -17,8 +17,8 @@ Issue Number: N/A
 Please check if your PR fulfills the following requirements:
 
 - [ ] Title starts with chart name (e.g. `[heist]`) if strictly relevant to a single chart
-- [ ] Bumped chart version according to semver if Chart has been changed
-- [ ] Changed `artifacthub.io/changes` annotation in the chart's Chart.yaml to reflect your changes if a Chart has been changed
+- [ ] Bumped chart version according to semver if Chart has been changed
+- [ ] Changed `artifacthub.io/changes` annotation in the chart's Chart.yaml to reflect your changes if a Chart has been changed
 - [ ] Commits are compliant with the [**Conventional Commits**](https://www.conventionalcommits.org/en/v1.0.0/) format
 - [ ] Commits are signed-off. You hereby accept the [**Developer Certificate of Origin**](https://developercertificate.org/)
 - [ ] Pull request does not include any merge commits (rebase only)
