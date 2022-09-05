@@ -4,7 +4,7 @@ description: Provisioning and generation of secrets in HashiCorp Vault using Kub
 type: application
 version: 1.0.0
 # renovate: datasource=github-releases depName=youniqx/heist extractVersion=^v(?<version>.*)$
-appVersion: "1.0.0"
+appVersion: "1.0.5"
 sources:
   - https://github.com/youniqx/helm-charts/tree/main/charts/heist
   - https://github.com/youniqx/heist
