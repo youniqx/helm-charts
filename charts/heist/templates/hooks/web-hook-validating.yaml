@@ -10,183 +10,213 @@ metadata:
     cert-manager.io/inject-ca-from: {{ printf "%s/%s" .Release.Namespace (include "heist.cert.name" .) }}
     {{- end }}
 webhooks:
-  - admissionReviewVersions:
-      - v1
-      - v1beta1
-    clientConfig:
-      {{- if .Values.webhooks.caBundle }}
-      caBundle: {{ .Values.webhooks.caBundle }}
-      {{- end }}
-      service:
-        name: {{ include "heist.services.webhook" . }}
-        namespace: {{ .Release.Namespace }}
-        path: /validate-vault-youniqx-com-v1alpha1-vaultbinding
-    failurePolicy: Fail
-    name: vvaultbinding.heist.youniqx.com
-    {{- if not .Values.scope.global }}
-    namespaceSelector:
-      matchLabels:
-        heist.youniqx.com/operator: {{ .Release.Namespace }}
+- admissionReviewVersions:
+  - v1
+  - v1beta1
+  clientConfig:
+    {{- if .Values.webhooks.caBundle }}
+    caBundle: {{ .Values.webhooks.caBundle }}
     {{- end }}
-    rules:
-      - apiGroups:
-          - heist.youniqx.com
-        apiVersions:
-          - v1alpha1
-        operations:
-          - CREATE
-          - UPDATE
-        resources:
-          - vaultbindings
-    sideEffects: None
-  - admissionReviewVersions:
-      - v1
-      - v1beta1
-    clientConfig:
-      {{- if .Values.webhooks.caBundle }}
-      caBundle: {{ .Values.webhooks.caBundle }}
-      {{- end }}
-      service:
-        name: {{ include "heist.services.webhook" . }}
-        namespace: {{ .Release.Namespace }}
-        path: /validate-vault-youniqx-com-v1alpha1-vaultcertificateauthority
-    failurePolicy: Fail
-    name: vvaultcertificateauthority.heist.youniqx.com
-    {{- if not .Values.scope.global }}
-    namespaceSelector:
-      matchLabels:
-        heist.youniqx.com/operator: {{ .Release.Namespace }}
+    service:
+      name: {{ include "heist.services.webhook" . }}
+      namespace: {{ .Release.Namespace }}
+      path: /validate-heist-youniqx-com-v1alpha1-vaultbinding
+  failurePolicy: Fail
+  name: vvaultbinding.heist.youniqx.com
+  {{- if not .Values.scope.global }}
+  namespaceSelector:
+    matchLabels:
+      heist.youniqx.com/operator: {{ .Release.Namespace }}
+  {{- end }}
+  rules:
+  - apiGroups:
+    - heist.youniqx.com
+    apiVersions:
+    - v1alpha1
+    operations:
+    - CREATE
+    - UPDATE
+    resources:
+    - vaultbindings
+  sideEffects: None
+- admissionReviewVersions:
+  - v1
+  - v1beta1
+  clientConfig:
+    {{- if .Values.webhooks.caBundle }}
+    caBundle: {{ .Values.webhooks.caBundle }}
     {{- end }}
-    rules:
-      - apiGroups:
-          - heist.youniqx.com
-        apiVersions:
-          - v1alpha1
-        operations:
-          - CREATE
-          - UPDATE
-          - DELETE
-        resources:
-          - vaultcertificateauthorities
-    sideEffects: None
-  - admissionReviewVersions:
-      - v1
-      - v1beta1
-    clientConfig:
-      {{- if .Values.webhooks.caBundle }}
-      caBundle: {{ .Values.webhooks.caBundle }}
-      {{- end }}
-      service:
-        name: {{ include "heist.services.webhook" . }}
-        namespace: {{ .Release.Namespace }}
-        path: /validate-vault-youniqx-com-v1alpha1-vaultkvsecretengine
-    failurePolicy: Fail
-    name: vvaultkvsecretengine.heist.youniqx.com
-    {{- if not .Values.scope.global }}
-    namespaceSelector:
-      matchLabels:
-        heist.youniqx.com/operator: {{ .Release.Namespace }}
+    service:
+      name: {{ include "heist.services.webhook" . }}
+      namespace: {{ .Release.Namespace }}
+      path: /validate-heist-youniqx-com-v1alpha1-vaultcertificateauthority
+  failurePolicy: Fail
+  name: vvaultcertificateauthority.heist.youniqx.com
+  {{- if not .Values.scope.global }}
+  namespaceSelector:
+    matchLabels:
+      heist.youniqx.com/operator: {{ .Release.Namespace }}
+  {{- end }}
+  rules:
+  - apiGroups:
+    - heist.youniqx.com
+    apiVersions:
+    - v1alpha1
+    operations:
+    - CREATE
+    - UPDATE
+    - DELETE
+    resources:
+    - vaultcertificateauthorities
+  sideEffects: None
+- admissionReviewVersions:
+  - v1
+  - v1beta1
+  clientConfig:
+    {{- if .Values.webhooks.caBundle }}
+    caBundle: {{ .Values.webhooks.caBundle }}
     {{- end }}
-    rules:
-      - apiGroups:
-          - heist.youniqx.com
-        apiVersions:
-          - v1alpha1
-        operations:
-          - CREATE
-          - UPDATE
-          - DELETE
-        resources:
-          - vaultkvsecretengines
-    sideEffects: None
-  - admissionReviewVersions:
-      - v1
-      - v1beta1
-    clientConfig:
-      {{- if .Values.webhooks.caBundle }}
-      caBundle: {{ .Values.webhooks.caBundle }}
-      {{- end }}
-      service:
-        name: {{ include "heist.services.webhook" . }}
-        namespace: {{ .Release.Namespace }}
-        path: /validate-vault-youniqx-com-v1alpha1-vaultsecret
-    failurePolicy: Fail
-    name: vvaultsecret.heist.youniqx.com
-    {{- if not .Values.scope.global }}
-    namespaceSelector:
-      matchLabels:
-        heist.youniqx.com/operator: {{ .Release.Namespace }}
+    service:
+      name: {{ include "heist.services.webhook" . }}
+      namespace: {{ .Release.Namespace }}
+      path: /validate-heist-youniqx-com-v1alpha1-vaultkvsecret
+  failurePolicy: Fail
+  name: vvaultkvsecret.heist.youniqx.com
+  {{- if not .Values.scope.global }}
+  namespaceSelector:
+    matchLabels:
+      heist.youniqx.com/operator: {{ .Release.Namespace }}
+  {{- end }}
+  rules:
+  - apiGroups:
+    - heist.youniqx.com
+    apiVersions:
+    - v1alpha1
+    operations:
+    - CREATE
+    - UPDATE
+    - DELETE
+    resources:
+    - vaultkvsecrets
+  sideEffects: None
+- admissionReviewVersions:
+  - v1
+  - v1beta1
+  clientConfig:
+    {{- if .Values.webhooks.caBundle }}
+    caBundle: {{ .Values.webhooks.caBundle }}
     {{- end }}
-    rules:
-      - apiGroups:
-          - heist.youniqx.com
-        apiVersions:
-          - v1alpha1
-        operations:
-          - CREATE
-          - UPDATE
-          - DELETE
-        resources:
-          - vaultkvsecrets
-    sideEffects: None
-  - admissionReviewVersions:
-      - v1
-      - v1beta1
-    clientConfig:
-      {{- if .Values.webhooks.caBundle }}
-      caBundle: {{ .Values.webhooks.caBundle }}
-      {{- end }}
-      service:
-        name: {{ include "heist.services.webhook" . }}
-        namespace: {{ .Release.Namespace }}
-        path: /validate-vault-youniqx-com-v1alpha1-vaultsyncsecret
-    failurePolicy: Fail
-    name: vvaultsyncsecret.heist.youniqx.com
-    {{- if not .Values.scope.global }}
-    namespaceSelector:
-      matchLabels:
-        heist.youniqx.com/operator: {{ .Release.Namespace }}
+    service:
+      name: {{ include "heist.services.webhook" . }}
+      namespace: {{ .Release.Namespace }}
+      path: /validate-heist-youniqx-com-v1alpha1-vaultkvsecretengine
+  failurePolicy: Fail
+  name: vvaultkvsecretengine.heist.youniqx.com
+  {{- if not .Values.scope.global }}
+  namespaceSelector:
+    matchLabels:
+      heist.youniqx.com/operator: {{ .Release.Namespace }}
+  {{- end }}
+  rules:
+  - apiGroups:
+    - heist.youniqx.com
+    apiVersions:
+    - v1alpha1
+    operations:
+    - CREATE
+    - UPDATE
+    - DELETE
+    resources:
+    - vaultkvsecretengines
+  sideEffects: None
+- admissionReviewVersions:
+  - v1
+  - v1beta1
+  clientConfig:
+    {{- if .Values.webhooks.caBundle }}
+    caBundle: {{ .Values.webhooks.caBundle }}
     {{- end }}
-    rules:
-      - apiGroups:
-          - heist.youniqx.com
-        apiVersions:
-          - v1alpha1
-        operations:
-          - CREATE
-          - UPDATE
-          - DELETE
-        resources:
-          - vaultsyncsecrets
-    sideEffects: None
-  - admissionReviewVersions:
-      - v1
-      - v1beta1
-    clientConfig:
-      {{- if .Values.webhooks.caBundle }}
-      caBundle: {{ .Values.webhooks.caBundle }}
-      {{- end }}
-      service:
-        name: {{ include "heist.services.webhook" . }}
-        namespace: {{ .Release.Namespace }}
-        path: /validate-vault-youniqx-com-v1alpha1-vaulttransitengine
-    failurePolicy: Fail
-    name: vvaulttransitengine.heist.youniqx.com
-    {{- if not .Values.scope.global }}
-    namespaceSelector:
-      matchLabels:
-        heist.youniqx.com/operator: {{ .Release.Namespace }}
+    service:
+      name: {{ include "heist.services.webhook" . }}
+      namespace: {{ .Release.Namespace }}
+      path: /validate-heist-youniqx-com-v1alpha1-vaultsyncsecret
+  failurePolicy: Fail
+  name: vvaultsyncsecret.heist.youniqx.com
+  {{- if not .Values.scope.global }}
+  namespaceSelector:
+    matchLabels:
+      heist.youniqx.com/operator: {{ .Release.Namespace }}
+  {{- end }}
+  rules:
+  - apiGroups:
+    - heist.youniqx.com
+    apiVersions:
+    - v1alpha1
+    operations:
+    - CREATE
+    - UPDATE
+    - DELETE
+    resources:
+    - vaultsyncsecrets
+  sideEffects: None
+- admissionReviewVersions:
+  - v1
+  - v1beta1
+  clientConfig:
+    {{- if .Values.webhooks.caBundle }}
+    caBundle: {{ .Values.webhooks.caBundle }}
     {{- end }}
-    rules:
-      - apiGroups:
-          - heist.youniqx.com
-        apiVersions:
-          - v1alpha1
-        operations:
-          - CREATE
-          - UPDATE
-          - DELETE
-        resources:
-          - vaulttransitengines
-    sideEffects: None
+    service:
+      name: {{ include "heist.services.webhook" . }}
+      namespace: {{ .Release.Namespace }}
+      path: /validate-heist-youniqx-com-v1alpha1-vaulttransitengine
+  failurePolicy: Fail
+  name: vvaulttransitengine.heist.youniqx.com
+  {{- if not .Values.scope.global }}
+  namespaceSelector:
+    matchLabels:
+      heist.youniqx.com/operator: {{ .Release.Namespace }}
+  {{- end }}
+  rules:
+  - apiGroups:
+    - heist.youniqx.com
+    apiVersions:
+    - v1alpha1
+    operations:
+    - CREATE
+    - UPDATE
+    - DELETE
+    resources:
+    - vaulttransitengines
+  sideEffects: None
+- admissionReviewVersions:
+  - v1
+  - v1beta1
+  clientConfig:
+    {{- if .Values.webhooks.caBundle }}
+    caBundle: {{ .Values.webhooks.caBundle }}
+    {{- end }}
+    service:
+      name: {{ include "heist.services.webhook" . }}
+      namespace: {{ .Release.Namespace }}
+      path: /validate-heist-youniqx-com-v1alpha1-vaulttransitkey
+  failurePolicy: Fail
+  name: vvaulttransitkey.heist.youniqx.com
+  {{- if not .Values.scope.global }}
+  namespaceSelector:
+    matchLabels:
+      heist.youniqx.com/operator: {{ .Release.Namespace }}
+  {{- end }}
+  rules:
+  - apiGroups:
+    - heist.youniqx.com
+    apiVersions:
+    - v1alpha1
+    operations:
+    - CREATE
+    - UPDATE
+    - DELETE
+    resources:
+    - vaulttransitkeys
+  sideEffects: None
 {{- end }}
