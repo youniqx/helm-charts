@@ -3,7 +3,7 @@ name: heist
 description: Provisioning and generation of secrets in HashiCorp Vault using Kubernetes resources
 type: application
 # renovate: datasource=github-releases depName=youniqx/heist extractVersion=^v(?<version>.*)$
-version: "1.1.0"
+version: "1.1.1"
 # renovate: datasource=github-releases depName=youniqx/heist extractVersion=^v(?<version>.*)$
 appVersion: "1.1.0"
 sources:
