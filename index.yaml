@@ -12,6 +12,32 @@ entries:
         - url: https://artifacthub.io/packages/helm/cert-manager/cert-manager
     apiVersion: v2
     appVersion: 1.1.0
+    created: "2022-09-14T10:03:33.159098787Z"
+    description: Provisioning and generation of secrets in HashiCorp Vault using Kubernetes
+      resources
+    digest: 100d9311c435a34ab1f87477e167dd221ecfc161c218ae06fc8024598047d9a4
+    maintainers:
+    - email: office@youniqx.com
+      name: youniqx
+    name: heist
+    sources:
+    - https://github.com/youniqx/helm-charts/tree/main/charts/heist
+    - https://github.com/youniqx/heist
+    type: application
+    urls:
+    - https://github.com/youniqx/helm-charts/releases/download/heist-1.1.1/heist-1.1.1.tgz
+    version: 1.1.1
+  - annotations:
+      artifacthub.io/changes: |-
+        - kind: added
+          description: Initial published version
+      artifacthub.io/license: Apache-2.0
+      artifacthub.io/operator: "true"
+      artifacthub.io/recommendations: |-
+        - url: https://artifacthub.io/packages/helm/hashicorp/vault
+        - url: https://artifacthub.io/packages/helm/cert-manager/cert-manager
+    apiVersion: v2
+    appVersion: 1.1.0
     created: "2022-09-14T09:36:50.778105387Z"
     description: Provisioning and generation of secrets in HashiCorp Vault using Kubernetes
       resources
@@ -105,4 +131,4 @@ entries:
     urls:
     - https://github.com/youniqx/helm-charts/releases/download/heist-1.0.0/heist-1.0.0.tgz
     version: 1.0.0
-generated: "2022-09-14T09:36:50.778120387Z"
+generated: "2022-09-14T10:03:33.15938219Z"
