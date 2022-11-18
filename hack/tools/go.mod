@@ -5,7 +5,7 @@ go 1.19
 require (
 	github.com/norwoodj/helm-docs v1.11.0
 	github.com/youniqx/heist v1.1.36
-	sigs.k8s.io/kind v0.15.0
+	sigs.k8s.io/kind v0.17.0
 )
 
 require (
@@ -51,6 +51,7 @@ require (
 	github.com/google/gnostic v0.5.7-v3refs // indirect
 	github.com/google/go-cmp v0.5.9 // indirect
 	github.com/google/gofuzz v1.1.0 // indirect
+	github.com/google/safetext v0.0.0-20220905092116-b49f7bc46da2 // indirect
 	github.com/google/uuid v1.1.2 // indirect
 	github.com/hashicorp/go-secure-stdlib/strutil v0.1.2 // indirect
 	github.com/hashicorp/hcl v1.0.0 // indirect
