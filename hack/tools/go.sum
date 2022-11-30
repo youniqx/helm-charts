@@ -695,6 +695,8 @@ github.com/youniqx/heist v1.1.37 h1:LTo8+HVP5a6uqiEt7Tc5YRGxv2ChqmmmRRPtNGAnBBY=
 github.com/youniqx/heist v1.1.37/go.mod h1:liiz3MrOzPqHvvy2WFCA1LY/gGeCY/Eeq3SX/XZeZeA=
 github.com/youniqx/heist v1.1.38 h1:T85giUdN2i/jJVPQS15WNTSKy9lUiA+VY8oKe7eRWfw=
 github.com/youniqx/heist v1.1.38/go.mod h1:liiz3MrOzPqHvvy2WFCA1LY/gGeCY/Eeq3SX/XZeZeA=
+github.com/youniqx/heist v1.1.39 h1:BpRhiWYzvbQOEgSPCcp9QQvjgeGzc234rAdVIenTUk8=
+github.com/youniqx/heist v1.1.39/go.mod h1:6b8a7/jLmM84lzHaQSkCbHrAR0cG9yf7a1U/s491R6w=
 github.com/yuin/goldmark v1.1.25/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
 github.com/yuin/goldmark v1.1.27/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
 github.com/yuin/goldmark v1.1.32/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
@@ -1389,6 +1391,8 @@ k8s.io/utils v0.0.0-20221012122500-cfd413dd9e85 h1:cTdVh7LYu82xeClmfzGtgyspNh6Ux
 k8s.io/utils v0.0.0-20221012122500-cfd413dd9e85/go.mod h1:OLgZIPagt7ERELqWJFomSt595RzquPNLL48iOWgYOg0=
 k8s.io/utils v0.0.0-20221108210102-8e77b1f39fe2 h1:GfD9OzL11kvZN5iArC6oTS7RTj7oJOIfnislxYlqTj8=
 k8s.io/utils v0.0.0-20221108210102-8e77b1f39fe2/go.mod h1:OLgZIPagt7ERELqWJFomSt595RzquPNLL48iOWgYOg0=
+k8s.io/utils v0.0.0-20221128185143-99ec85e7a448 h1:KTgPnR10d5zhztWptI952TNtt/4u5h3IzDXkdIMuo2Y=
+k8s.io/utils v0.0.0-20221128185143-99ec85e7a448/go.mod h1:OLgZIPagt7ERELqWJFomSt595RzquPNLL48iOWgYOg0=
 rsc.io/binaryregexp v0.2.0/go.mod h1:qTv7/COck+e2FymRvadv62gMdZztPaShugOCi3I+8D8=
 rsc.io/quote/v3 v3.1.0/go.mod h1:yEA65RcK8LyAZtP9Kv3t0HmxON59tX3rD+tICJqUlj0=
 rsc.io/sampler v1.3.0/go.mod h1:T1hPZKmBbMNahiBKFy5HrXp6adAjACjK9JXDnKaTXpA=

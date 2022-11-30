@@ -4,7 +4,7 @@ go 1.19
 
 require (
 	github.com/norwoodj/helm-docs v1.11.0
-	github.com/youniqx/heist v1.1.38
+	github.com/youniqx/heist v1.1.39
 	sigs.k8s.io/kind v0.17.0
 )
 
@@ -120,7 +120,7 @@ require (
 	k8s.io/helm v2.14.3+incompatible // indirect
 	k8s.io/klog/v2 v2.80.1 // indirect
 	k8s.io/kube-openapi v0.0.0-20220803162953-67bda5d908f1 // indirect
-	k8s.io/utils v0.0.0-20221108210102-8e77b1f39fe2 // indirect
+	k8s.io/utils v0.0.0-20221128185143-99ec85e7a448 // indirect
 	sigs.k8s.io/controller-runtime v0.13.1 // indirect
 	sigs.k8s.io/json v0.0.0-20220713155537-f223a00ba0e2 // indirect
 	sigs.k8s.io/structured-merge-diff/v4 v4.2.3 // indirect
