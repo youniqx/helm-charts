@@ -4,7 +4,7 @@ go 1.19
 
 require (
 	github.com/norwoodj/helm-docs v1.11.0
-	github.com/youniqx/heist v1.1.41
+	github.com/youniqx/heist v1.1.42
 	sigs.k8s.io/kind v0.17.0
 )
 
@@ -42,7 +42,7 @@ require (
 	github.com/go-openapi/jsonpointer v0.19.5 // indirect
 	github.com/go-openapi/jsonreference v0.19.5 // indirect
 	github.com/go-openapi/swag v0.19.14 // indirect
-	github.com/go-test/deep v1.0.8 // indirect
+	github.com/go-test/deep v1.1.0 // indirect
 	github.com/gobwas/glob v0.2.3 // indirect
 	github.com/gogo/protobuf v1.3.2 // indirect
 	github.com/golang-jwt/jwt/v4 v4.2.0 // indirect
