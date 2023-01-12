@@ -410,6 +410,8 @@ github.com/hashicorp/vault/sdk v0.6.0 h1:6Z+In5DXHiUfZvIZdMx7e2loL1PPyDjA4bVh9ZT
 github.com/hashicorp/vault/sdk v0.6.0/go.mod h1:+DRpzoXIdMvKc88R4qxr+edwy/RvH5QK8itmxLiDHLc=
 github.com/hashicorp/vault/sdk v0.6.1 h1:sjZC1z4j5Rh2GXYbkxn5BLK05S1p7+MhW4AgdUmgRUA=
 github.com/hashicorp/vault/sdk v0.6.1/go.mod h1:Ck4JuAC6usTphfrrRJCRH+7/N7O2ozZzkm/fzQFt4uM=
+github.com/hashicorp/vault/sdk v0.6.2 h1:LtWXUM+WheM5T8pOO/6nOTiFwnE+4y3bPztFf15Oz24=
+github.com/hashicorp/vault/sdk v0.6.2/go.mod h1:KyfArJkhooyba7gYCKSq8v66QdqJmnbAxtV/OX1+JTs=
 github.com/hpcloud/tail v1.0.0/go.mod h1:ab1qPbhIpdTxEkNHXyeSf5vhxWSCs/tWer42PpOxQnU=
 github.com/huandu/xstrings v1.2.0/go.mod h1:DvyZB1rfVYsBIigL8HwpZgxHwXozlTgGqn63UyNX5k4=
 github.com/huandu/xstrings v1.3.1/go.mod h1:y5/lhBue+AyNmUVz9RLU9xbLR0o4KIIExikq4ovT0aE=
@@ -731,6 +733,8 @@ github.com/youniqx/heist v1.1.45 h1:JWTPTL4GoIZQiqT6CaazSA5KMdID766tMA5ne/UO8Zk=
 github.com/youniqx/heist v1.1.45/go.mod h1:3uGWUYi5AwTAVm6qlZwf8G2L7cwnHTgzaM/mPqwcjmE=
 github.com/youniqx/heist v1.1.46 h1:TrvAsMN15LTVwdsTmN+wT7PY39EXzghEO5EVWNVBY9I=
 github.com/youniqx/heist v1.1.46/go.mod h1:Uw1c2hHcs1RoIZzBG+HEtrjaNCmWu9USqUVij35Lk2o=
+github.com/youniqx/heist v1.1.47 h1:cn1iXQhATuMd5VpB95xnSpsgVmwRegwd9EiwX7zWd+g=
+github.com/youniqx/heist v1.1.47/go.mod h1:NggvdL2MYvluGLerN88ICQa9w6EgcbNcXWhGsztkb88=
 github.com/yuin/goldmark v1.1.25/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
 github.com/yuin/goldmark v1.1.27/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
 github.com/yuin/goldmark v1.1.32/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
