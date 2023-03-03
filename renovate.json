@@ -18,5 +18,6 @@
       "matchPaths": ["charts/**"],
       "bumpVersion": "patch"
     }
-  ]
+  ],
+  "postUpdateOptions": ["gomodTidy", "gomodUpdateImportPaths"]
 }
