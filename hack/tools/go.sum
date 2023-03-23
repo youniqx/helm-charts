@@ -432,8 +432,8 @@ github.com/ugorji/go v1.1.4/go.mod h1:uQMGLiO92mf5W77hV/PUCpI3pbzQx3CRekS0kk+RGr
 github.com/ugorji/go/codec v0.0.0-20181204163529-d75b2dcb6bc8/go.mod h1:VFNgLljTbGfSG7qAOspJ7OScBnGdDN/yBr0sguwnwf0=
 github.com/xiang90/probing v0.0.0-20190116061207-43a291ad63a2/go.mod h1:UETIi67q53MR2AWcXfiuqkDkRtnGDLqkBTpCHuJHxtU=
 github.com/xordataexchange/crypt v0.0.3-0.20170626215501-b2862e3d0a77/go.mod h1:aYKd//L2LvnjZzWKhF00oedf4jCCReLcmhLdhm1A27Q=
-github.com/youniqx/heist v1.1.83 h1:jw1r8d9pnOsna4HF+4Q+N2BRnPWvgRqztiA4iSl7T68=
-github.com/youniqx/heist v1.1.83/go.mod h1:qVd3tCRY/YTx18fBsHbiMYLKjYy7mqdpjuJ4vrdc0tk=
+github.com/youniqx/heist v1.1.84 h1:CstzkuAJmwUaBwU+z5OdUSXzSDxlsOxdfEJRASplDAg=
+github.com/youniqx/heist v1.1.84/go.mod h1:qVd3tCRY/YTx18fBsHbiMYLKjYy7mqdpjuJ4vrdc0tk=
 github.com/yuin/goldmark v1.1.25/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
 github.com/yuin/goldmark v1.1.27/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
 github.com/yuin/goldmark v1.1.32/go.mod h1:3hX8gzYuyVAZsxl0MRgGTJEmQBFcNTphYh9decYSb74=
