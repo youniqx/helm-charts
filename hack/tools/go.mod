@@ -3,7 +3,7 @@ module github.com/youniqx/helm-charts/hack/tools
 go 1.19
 
 require (
-	github.com/norwoodj/helm-docs v1.11.2
+	github.com/norwoodj/helm-docs v1.11.3
 	github.com/youniqx/heist v1.1.135
 	sigs.k8s.io/kind v0.20.0
 )
@@ -85,7 +85,7 @@ require (
 	go.uber.org/multierr v1.11.0 // indirect
 	go.uber.org/zap v1.25.0 // indirect
 	golang.org/x/crypto v0.12.0 // indirect
-	golang.org/x/exp v0.0.0-20220722155223-a9213eeb770e // indirect
+	golang.org/x/exp v0.0.0-20220827204233-334a2380cb91 // indirect
 	golang.org/x/net v0.14.0 // indirect
 	golang.org/x/oauth2 v0.8.0 // indirect
 	golang.org/x/sys v0.12.0 // indirect
