@@ -3,7 +3,7 @@ module github.com/youniqx/helm-charts/hack/tools
 go 1.19
 
 require (
-	github.com/norwoodj/helm-docs v1.11.3
+	github.com/norwoodj/helm-docs v1.12.0
 	github.com/youniqx/heist v1.1.141
 	sigs.k8s.io/kind v0.20.0
 )
