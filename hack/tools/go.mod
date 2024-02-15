@@ -5,7 +5,7 @@ go 1.19
 require (
 	github.com/norwoodj/helm-docs v1.12.0
 	github.com/youniqx/heist v1.1.141
-	sigs.k8s.io/kind v0.21.0
+	sigs.k8s.io/kind v0.22.0
 )
 
 require (
