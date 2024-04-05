@@ -1,6 +1,6 @@
 module github.com/youniqx/helm-charts/hack/tools
 
-go 1.19
+go 1.22
 
 require (
 	github.com/norwoodj/helm-docs v1.12.0
