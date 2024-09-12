@@ -6,7 +6,7 @@ toolchain go1.23.1
 
 require (
 	github.com/norwoodj/helm-docs v1.13.1
-	github.com/youniqx/heist v1.1.199
+	github.com/youniqx/heist v1.1.200
 	sigs.k8s.io/kind v0.24.0
 )
 
