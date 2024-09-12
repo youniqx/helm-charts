@@ -2,7 +2,7 @@ module github.com/youniqx/helm-charts/hack/tools
 
 go 1.22.0
 
-toolchain go1.22.4
+toolchain go1.23.1
 
 require (
 	github.com/norwoodj/helm-docs v1.13.1
